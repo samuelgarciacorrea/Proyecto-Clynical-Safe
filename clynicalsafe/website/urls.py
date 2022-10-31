@@ -12,4 +12,7 @@ urlpatterns = [
     path("register.html", views.registro, name="register"),
     path("login.html", views.login, name="login"),
     path("logout/", views.logout, name="logout"),
+    path("citas.html/", views.citas, name="citas"),
+    path("history.html/", views.historias, name="historias"),
+    
 ]

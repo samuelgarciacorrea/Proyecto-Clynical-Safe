@@ -103,13 +103,6 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a class="popup-with-form" href="#test-form">Make an Appointment</a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-12">
                                 <div class="mobile_menu d-block d-lg-none"></div>
                             </div>
@@ -129,32 +122,8 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6">
                     <div class="welcome_docmed_info">
-                        <h2>Welcome to Docmed</h2>
-                        <div class="content-middle">
-                            <h1>
-                                Iniciar sesi&oacute;n
-                            </h1>
-                            {% if error %}
-                            <p>
-                                Nombre de usuario o contrase&ntilde;a incorrecto, intente de nuevo
-                            </p>
-                            {% endif %}
-                            <form action="" method="POST">
-                                {% csrf_token %}
-                                <div class="form-content">
-                                        <label>Usuario * </label>
-                                        <input type="text" name="username" required>
-
-                                        <label>Contrase&ntilde;a *</label>
-                                        <input type="password" name="password" required>
-                                    
-                                   <input type="submit" class="button " value="Iniciar">
-                                   <a href="{% url "register" %}" style="font-size: 16px">¿No tienes cuenta? Registrate aqu&iacute;</a>
-                
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                        <h2>Citas</h2>
+                       </div>
                 </div>
                     </div>
                 </div>
@@ -193,92 +162,106 @@
         </div>
     </div>
     <!-- Emergency_contact end -->
+
 <!-- footer start -->
-<footer class="footer">
-    <div class="footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="footer_widget">
-                        <div class="footer_logo">
-                            <a href="#">
-                                <img src="{% static 'website/img/footer_logo.png' %}" alt="">
-                            </a>
+    <footer class="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-lg-4">
+                            <div class="footer_widget">
+                                <div class="footer_logo">
+                                    <a href="#">
+                                        <img src="{% static 'website/img/footer_logo.png' %}" alt="">
+                                    </a>
+                                </div>
+                                <p>
+                                        Firmament morning sixth subdue darkness 
+                                        creeping gathered divide.
+                                </p>
+                                <div class="socail_links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="ti-twitter-alt"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                            </div>
                         </div>
-                        <div class="socail_links">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="ti-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="ti-twitter-alt"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Departments
+                                </h3>
+                                <ul>
+                                    <li><a href="#">Eye Care</a></li>
+                                    <li><a href="#">Skin Care</a></li>
+                                    <li><a href="#">Pathology</a></li>
+                                    <li><a href="#">Medicine</a></li>
+                                    <li><a href="#">Dental</a></li>
+                                </ul>
+    
+                            </div>
                         </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
-                    <div class="footer_widget">
-                        <h3 class="footer_title">
-                                Departamentos
-                        </h3>
-                        <ul>
-                            <li><a href="#">Oftalmologo</a></li>
-                            <li><a href="#">Dermatologia</a></li>
-                            <li><a href="#">Patologia
-                            </a></li>
-                            <li><a href="#">Medicos Generales</a></li>
-                            <li><a href="#">Odontologos</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-        
-                <div class="col-xl-3 col-md-6 col-lg-3">
-                    <div class="footer_widget">
-                        <h3 class="footer_title">
-                                Direccion
-                        </h3>
-                        <p>
-                            Carrera80#22-103<br>
-                            +10 367 467 8934 <br>
-                            clynicalsafe@gmail  .com
-                        </p>
+                        <div class="col-xl-2 col-md-6 col-lg-2">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Useful Links
+                                </h3>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#"> Contact</a></li>
+                                    <li><a href="#"> Appointment</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-lg-3">
+                            <div class="footer_widget">
+                                <h3 class="footer_title">
+                                        Address
+                                </h3>
+                                <p>
+                                    200, D-block, Green lane USA <br>
+                                    +10 367 467 8934 <br>
+                                    docmed@contact.com
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="copy-right_text">
-        <div class="container">
-            <div class="footer_border"></div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <p class="copy_right text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-
-
-
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados
-                    </p>
+            <div class="copy-right_text">
+                <div class="container">
+                    <div class="footer_border"></div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center">
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
+        </footer>
 <!-- footer end  -->
-<!-- link that opens popup -->
+    <!-- link that opens popup -->
 
     <!-- form itself end-->
     <form id="test-form" class="white-popup-block mfp-hide">

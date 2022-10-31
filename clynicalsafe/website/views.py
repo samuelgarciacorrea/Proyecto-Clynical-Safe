@@ -30,6 +30,9 @@ def contact(request):
 def Department(request):
     return render(request, 'Department.html', {})
 
+def historias(request):
+    return render(request, 'history.html', {})
+
 
 def Doctors(request):
     return render(request, 'Doctors.html', {})
@@ -41,6 +44,9 @@ def elements(request):
 
 def main(request):
     return render(request, 'main.html', {})
+
+def citas(request):
+    return render(request, 'citas.html', {})
 
 def login(request):
 
