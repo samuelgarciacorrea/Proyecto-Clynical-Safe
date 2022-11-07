@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Docmed</title>
+	<title>Clynical Safe</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -97,13 +97,6 @@
 							</nav>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
-						<div class="Appointment">
-							<div class="book_btn d-none d-lg-block">
-								<a class="popup-with-form" href="#test-form">Make an Appointment</a>
-							</div>
-						</div>
-					</div>
 					<div class="col-12">
 						<div class="mobile_menu d-block d-lg-none"></div>
 					</div>
@@ -126,28 +119,28 @@
 					<h4 class="mb-20">Datos Personales</h4>
 					<form action="#">
 						<div class="mt-10">
-							<input type="text" name="first_name" placeholder="First Name"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
+							<input type="text" name="first_name" placeholder="Nombre"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'" required
 								class="single-input">
 						</div>
 						<div class="mt-10">
-							<input type="text" name="last_name" placeholder="Last Name"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
+							<input type="text" name="last_name" placeholder="Primer Apellido"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Primer Apellido'" required
 								class="single-input">
 						</div>
 						<div class="mt-10">
-							<input type="text" name="last_name" placeholder="Last Name"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required
+							<input type="text" name="last_name" placeholder="Segundo Apellido"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Segundo Apellido'" required
 								class="single-input">
 						</div>
 						<div class="mt-10" >
 							<div class="col-lg-3 col-lg-3">
 								<div class="default-select" id="default-select">
 											<select>
-												<option value=" 1">sex</option>
-									<option value="1">Female</option>
-									<option value="1">Male</option>
-									<option value="1">Other</option>
+												<option value=" 1">Genero</option>
+									<option value="1">Hombre</option>
+									<option value="1">Mujer</option>
+									<option value="1">Otro</option>
 									</select>
 								</div>
 								<div class="mt-10">
@@ -156,8 +149,8 @@
 										class="single-input">
 								</div>
 								<div class="mt-10">
-									<input type="text" name="Age" placeholder="Age"
-										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Age'" required
+									<input type="text" name="Age" placeholder="edad"
+										onfocus="this.placeholder = ''" onblur="this.placeholder = 'Edad'" required
 										class="single-input">
 								</div>
 							</div>	
@@ -175,20 +168,20 @@
 							</div>
 						</div>		
 						<div class="mt-10">
-							<input type="email" name="EMAIL" placeholder="Email address"
-								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required
+							<input type="email" name="EMAIL" placeholder="Correo"
+								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'" required
 								class="single-input">
 						</div>
 						<div class="input-group-icon mt-10">
 							<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-							<input type="text" name="address" placeholder="Address" onfocus="this.placeholder = ''"
-								onblur="this.placeholder = 'Address'" required class="single-input">
+							<input type="text" name="address" placeholder="Direccion" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Direccion'" required class="single-input">
 						</div>
 						<div class="input-group-icon mt-10">
 							<div class="icon"><i class="fa fa-plane" aria-hidden="true"></i></div>
 							<div class="form-select" id="default-select"">
 										<select>
-											<option value=" 1">City</option>
+											<option value=" 1">Ciudad</option>
 								<option value="1">Medellín</option>
 								<option value="1">Envigado</option>
 								<option value="1">Itagui</option>
@@ -201,7 +194,7 @@
 							<div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
 							<div class="form-select" id="default-select"">
 										<select>
-											<option value=" 1">Country</option>
+											<option value=" 1">Pais</option>
 								<option value="1">Colombia</option>
 								<option value="1">Venezuela</option>
 								<option value="1">Panama</option>
@@ -264,7 +257,7 @@
 					<div class="single-element-widget">
 						<h4 class="mb-30">Fecha en que se elaboró la historia</h4>
 						<div class="mt-10">
-							<input type="text" name="Fecha" placeholder="DD/MM/AA"
+							<input type="date" name="Fecha" placeholder="DD/MM/AA"
 								onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fecha'" required
 								class="single-input">
 						</div>
@@ -371,53 +364,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
 	</div>
 </footer>
 <!-- footer end  -->
-
-<!-- form itself end-->
-<form id="test-form" class="white-popup-block mfp-hide">
-<div class="popup_box ">
-	<div class="popup_inner">
-		<h3>Make an Appointment</h3>
-		<form action="#">
-			<div class="row">
-				<div class="col-xl-6">
-					<input id="datepicker" placeholder="Pick date">
-				</div>
-				<div class="col-xl-6">
-					<input id="datepicker2" placeholder="Suitable time">
-				</div>
-				<div class="col-xl-6">
-					<select class="form-select wide" id="default-select" class="">
-						<option data-display="Select Department">Department</option>
-						<option value="1">Eye Care</option>
-						<option value="2">Physical Therapy</option>
-						<option value="3">Dental Care</option>
-					</select>
-				</div>
-				<div class="col-xl-6">
-					<select class="form-select wide" id="default-select" class="">
-						<option data-display="Doctors">Doctors</option>
-						<option value="1">Mirazul Alom</option>
-						<option value="2">Monzul Alom</option>
-						<option value="3">Azizul Isalm</option>
-					</select>
-				</div>
-				<div class="col-xl-6">
-					<input type="text"  placeholder="Name">
-				</div>
-				<div class="col-xl-6">
-					<input type="text"  placeholder="Phone no.">
-				</div>
-				<div class="col-xl-12">
-					<input type="email"  placeholder="Email">
-				</div>
-				<div class="col-xl-12">
-					<button type="submit" class="boxed-btn3">Confirm</button>
-				</div>
-			</div>
-		</form>
-	</div>
-</div>
-</form>
 
 
 <!-- form itself end -->
